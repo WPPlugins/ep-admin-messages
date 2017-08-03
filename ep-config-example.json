@@ -1,0 +1,94 @@
+{
+  "messages": [
+    {
+      "message": "This message is visible on all screens, for all users."
+    },
+    {
+      "message": "This message is shown on all screens, but only for users with role <code>editor</code> or <code>author</code>.",
+      "user_role": "editor,author",
+      "location": "dashboard"
+    },
+    {
+      "message": "This message is shown on all screens, but only for the user with id 1.",
+      "user_id": 1
+    },
+    {
+      "message": "This message is shown on all screens, but only for the user with the username <code>admin</code>.",
+      "username": "admin"
+    },
+    {
+      "message": "This message is visible when someone edits a <strong>page</strong> or a post of type </strong>custom post type called <strong>custom_post_type</strong>.",
+      "location": "post_type:page, post_type:custom_post_type"
+    },
+    {
+      "message": [
+        "<p>This message is visible when a user edits a <strong>page</strong> or a post type with the name <strong>custom_post_type</strong>.</p>",
+        "<p>The message is shown in a metbox in the right column",
+        "and is also has a lot of HTML-code in it.</p>",
+        "<h2>Here comes a definition list</h2>",
+        "<dl>",
+        "<dt>Definition term one</dt>",
+        "<dd>Data description for the above term</dd>",
+        "<dt>Another term comes here</dt>",
+        "<dd>Some text for this term: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>",
+        "</dl>",
+        "<h2>Ordered lists can be used</h2>",
+        "<ol>",
+        "<li>First list item</li>",
+        "<li>Second list item</li>",
+        "<li>List item <em>n</em></li>",
+        "</ol>",
+        "<h2>Images work fine too</h2>",
+        "<p><img src='http://lorempixel.com/95/95/' alt='Dummy image from lorempixel.com' widht=100 height=100>"
+      ],
+      "location": "post_type_metabox:page, post_type_metabox:custom_post_type"
+    },
+    {
+      "message": "This message if visible on the <em>posts overview page</em> for <strong>pages</strong> and the custom post type with name <strong>custom_post_type</strong>.",
+      "location": "post_type_overview:page, post_type_overview:custom_post_type"
+    },
+    {
+      "message": "This message is shown at the top of the dashboard, for all users.",
+      "location": "dashboard"
+    },
+    {
+      "message": [
+        "<p>This message is shown on the dashboard in a metabox. It is shown to all users.</p>",
+        "<p>This is a good place to add some HTML to a message.</p>",
+        "<p>You can use all <strong>kinds</strong> of <em>HTML</em>. <a href='#'>Links are ok to have</a>.",
+        "<p>Images are ok too:<br><img src='http://lorempixel.com/95/95/' alt='Dummy image from lorempixel.com' widht=100 height=100>"
+      ],
+      "location": "dashboard_metabox",
+      "title": "This is the the text in title of the meta box"
+    },
+    {
+      "message": "This message is shown on the plugins, users and profile screens.",
+      "location": "plugins, users, profile"
+    },
+    {
+      "message": "This message is shown only when a user edits a page, and that page has a slug/permalink that begins with <code>footer-</code> or <code>header-</code>.",
+      "location": "post_type:page",
+      "post_slug": "footer-*, header-*"
+    },
+    {
+      "message": "This message is shown on the dasboard, but only for users that has capability <code>manage_options</code>.",
+      "capability": "manage_options",
+      "location": "dashboard"
+    },
+    {
+      "message": [
+        "<p>This message is shown when editing pages. It is shown in a metabox in the right column.</p>",
+        "<p>It's only visible for users who has capability <code>edit_posts</code> or <code>manage_options</code>.</p>",
+        "<p>And finally it's also only visible for posts that have a slug/permalink that begins with <code>header-</code>.</p>"
+      ],
+      "location": "post_type_metabox:page",
+      "capability": "edit_posts, manage_options",
+      "post_slug": "header-*"
+    },
+    {
+      "_Not done yet": "This section is not done yet.",
+      "message_en-US": "This message will be shown only to admin users with en-US as their admin language",
+      "message_sv-SE": "Detta meddelande syns endast för admins med svenska som språk"
+    }
+  ]
+}
